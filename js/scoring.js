@@ -143,8 +143,6 @@ function calculateResult() {
     const vowels = ['A', 'E', 'I', 'O', 'U'];
     const article = vowels.includes(result[0].toUpperCase()) ? 'an' : 'a';
 
-    alert(result);
-
     // Display the result text
     const resultText = `Based on your answers, you are ${article} ${result}!`;
     const resultSection = document.getElementById('section12');
@@ -153,7 +151,7 @@ function calculateResult() {
     // Create the image element for the result
     const imageWrapper = resultSection.querySelector('.result-wrapper');
     const img = document.createElement('img');
-    img.src = `../assets/results/${result}.png`;
+    img.src = `./assets/results/${result}.png`;
     img.alt = result;
     img.classList.add('result-image'); // Add a class for styling
     imageWrapper.innerHTML = ''; // Clear any existing content
