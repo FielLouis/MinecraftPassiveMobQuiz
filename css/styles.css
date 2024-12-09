@@ -1,0 +1,206 @@
+/* Font-face declarations for custom fonts */
+@font-face {
+    font-family: MC-header-reg;
+    src: url("../fonts/Minecrafter.Reg.ttf");
+}
+
+@font-face {
+    font-family: MC-header-alt;
+    src: url("../fonts/Minecrafter.Alt.ttf");
+}
+
+@font-face {
+    font-family: MC-normal-reg;
+    src: url("../fonts/MinecraftRegular-Bmg3.otf");
+}
+
+@font-face {
+    font-family: MC-normal-bold;
+    src: url("../fonts/MinecraftBold-nMK1.otf");
+}
+
+@font-face {
+    font-family: MC-normal-italic;
+    src: url("../fonts/MinecraftItalic-R8Mo.otf");
+}
+
+@font-face {
+    font-family: MC-noraml-bolditalic;
+    src: url("../fonts/MinecraftBoldItalic-1y1e.otf");
+}
+
+/* Initialize CSS variables (custom properties) */
+:root {
+    --main-color: blue;
+    --light-gray: gray;
+    --highlight: blue;
+    --white: white;
+    --unavailable: red;
+    --available: green;
+    font-size: 48px; /* Default font size */
+}
+
+/* Reset margins and paddings for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* To include padding and border in element width and height */
+}
+
+html, body {
+    height: 100%;
+    background-image: url('../assets/dirt-bg.png'); /* Replace with your image URL */
+    background-size: cover; /* Ensures the image covers the element fully */
+    background-repeat: no-repeat; /* Prevents tiling of the background image */
+    background-position: center center; /* Centers the image within the element */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Pushes footer to the bottom */
+    align-items: center;
+    font-family: MC-normal-reg;
+}
+
+nav, footer {
+    width: 100%;
+    font-size: 0.5rem;
+    color: var(--light-gray);
+    text-align: center;
+    font-family: MC-normal-reg;
+}
+
+section.center-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%; 
+    height: 100vh;
+}
+
+footer {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--light-gray);
+}
+
+footer p {
+    color: var(--light-gray);
+}
+
+footer a:hover{
+    color: var(--highlight);
+}
+
+/* General fade-in and fade-out transitions for all sections */
+.quiz-section {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    display: flex; /* Flexbox to center content */
+    flex-direction: column;
+    justify-content: center; /* Vertically center content */
+    align-items: center;     /* Horizontally center content */
+}
+
+.quiz-section.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+h1 {
+    font-family: MC-header-alt;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    color: var(--white);
+}
+
+p, label {
+    color: var(--white);
+}
+
+
+/* Positioning the button row at the bottom of each section */
+.button-row {
+    display: flex;
+    justify-content: space-around; 
+    width: 100%;
+    bottom: 20px; 
+    left: 0;  
+    padding: 10px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 0.75rem;
+    cursor: pointer;
+    background-color: var(--available);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    font-family: MC-normal-reg;
+}
+
+button:hover {
+    opacity: 0.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Style for the disabled button */
+button:disabled, button:disabled:hover {
+    background-color: var(--available); 
+    color: var(--white); 
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* Initially hidden sections */
+#section2, #section3, #section4, #section5, #section6, #section7, #section8, #section9, #section10, #section11, #section12 {
+    display: none;
+}
+
+/* styles for the quiz options */
+.quiz-section p {
+    margin-bottom: 1.5rem;
+}
+
+.quiz-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* 2 columns */
+    gap: 20px;
+}
+
+.quiz-option {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+}
+
+.quiz-option input[type="radio"] {
+    margin-top: 0; 
+}
+
+.quiz-option label {
+    font-size: 0.5rem;
+    max-width: 500px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: left;
+    cursor: pointer;
+}
+
+/* style for the result image */
+.result-image {
+    max-width: auto; 
+    height: 200px;
+}
+

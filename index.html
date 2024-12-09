@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Personality Test</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="icon" href="/assets/icon/minecraft-32x32.png" sizes="32x32">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <!-- <nav>
+        Test
+    </nav> -->
+
+    <!-- Start -->
+    <section class="center-screen quiz-section" id="section1">
+        <h1>Welcome</h1>
+        <p>Try and see what passive mob are you in Minecraft</p>
+        <div class="button-row">
+            <button onclick="switchSection('section1', 'section2')">Start</button>
+        </div>
+    </section>
+
+    <!-- Question 1 -->
+    <section class="center-screen quiz-section" id="section2">
+        <h1>Question 1</h1>
+        <p>What environment do you prefer to live in?</p>
+        
+        <div class="quiz-options">
+            <div class="quiz-option">
+                <input type="radio" name="q1" id="radioA1" value="A"> 
+                <label for="radioA1">A tropical beach with warm sun and clear waters.</label>
+            </div>
+            <div class="quiz-option">
+                <input type="radio" name="q1" id="radioB1" value="B"> 
+                <label for="radioB1">A cold, snowy place with lots of space to roam.</label>
+            </div>
+            <div class="quiz-option">
+                <input type="radio" name="q1" id="radioC1" value="C"> 
+                <label for="radioC1">A dense forest or jungle with lots of animals.</label>
+            </div>
+            <div class="quiz-option">
+                <input type="radio" name="q1" id="radioD1" value="D"> 
+                <label for="radioD1">A peaceful open field with plenty of space to graze.</label>
+            </div>
+        </div>
+        
+        <div class="button-row">
+            <button data-prev="section1">Back</button>
+            <button data-next="section3" disabled>Next</button>
+        </div>
+    </section>    
+
+    <!-- Question 2 -->
+    <section class="center-screen quiz-section" id="section3">
+        <h1>Question 2</h1>
+        <p>How do you feel about traveling?</p>
+        
+        <div class="quiz-options">
+            <div class="quiz-option">
+                <input type="radio" name="q2" id="radioA2" value="A"> 
+                <label for="radioA2">I love to explore the world, fly, or glide through the air.</label>
+            </div>
+            <div class="quiz-option">
+                <input type="radio" name="q2" id="radioB2" value="B"> 
+                <label for="radioB2">I enjoy a more steady pace and prefer traveling by foot.</label>
+            </div>
+            <div class="quiz-option">
+                <input type="radio" name="q2" id="radioC2" value="C"> 
+                <label for="radioC2">I like to swim through rivers and oceans.</label>
+            </div>
+            <div class="quiz-option">
+                <input type="radio" name="q2" id="radioD2" value="D"> 
+                <label for="radioD2">I prefer staying in one place and only venture out when needed.</label>
+            </div>
+        </div>
+        
+        <div class="button-row">
+            <button data-prev="section2">Back</button>
+            <button data-next="section4" disabled>Next</button>
+        </div>
+    </section>
+
+    <!-- Question 3 -->
+    <section class="center-screen quiz-section" id="section4">
+        <h1>Question 3</h1>
+        <p>How would you describe your personality?</p>
+        
+        <div class="quiz-options">
+            <div class="quiz-option">
+                <input type="radio" name="q3" id="radioA3" value="A"> 
+                <label for="radioA3">Playful and energetic, always moving around.</label>
+            </div>
+            <div class="quiz-option">
+                <input type="radio" name="q3" id="radioB3" value="B"> 
+                <label for="radioB3">Quiet and calm, I prefer peaceful surroundings.</label>
+            </div>
+            <div class="quiz-option">
+                <input type="radio" name="q3" id="radioC3" value="C"> 
+                <label for="radioC3">Social and always hanging out with a group.</label>
+            </div>
+            <div class="quiz-option">
+                <input type="radio" name="q3" id="radioD3" value="D"> 
+                <label for="radioD3">Curious and adventurous, I like discovering new things.</label>
+            </div>
+        </div>
+        
+        <div class="button-row">
+            <button data-prev="section3">Back</button>
+            <button data-next="section5" disabled>Next</button>
+        </div>
+    </section> 
+
+    <!-- Question 4 -->
+    <section class="center-screen quiz-section" id="section5">
+        <h1>Question 4</h1>
+        <p>What’s your ideal social situation?</p>
+        
+        <div class="quiz-options">
+            <div class="quiz-option">
+                <input type="radio" name="q4" id="radioA4" value="A"> 
+                <label for="radioA4">I love being around others, talking and interacting.</label>
+            </div>
+            <div class="quiz-option">
+                <input type="radio" name="q4" id="radioB4" value="B"> 
+                <label for="radioB4">I prefer to be with my close-knit family or friends.</label>
+            </div>
+            <div class="quiz-option">
+                <input type="radio" name="q4" id="radioC4" value="C"> 
+                <label for="radioC4">I enjoy being alone and doing my own thing.</label>
+            </div>
+            <div class="quiz-option">
+                <input type="radio" name="q4" id="radioD4" value="D"> 
+                <label for="radioD4">I don’t mind socializing but need my space too.</label>
+            </div>
+        </div>
+        
+        <div class="button-row">
+            <button data-prev="section4">Back</button>
+            <button data-next="section6" disabled>Next</button>
+        </div>
+    </section> 
+
+    <!-- Question 5 -->
+    <section class="center-screen quiz-section" id="section6">
+        <h1>Question 5</h1>
+        <p>What’s your favorite way to communicate?</p>
+        
+        <div class="quiz-options">
+            <div class="quiz-option">
+                <input type="radio" name="q5" id="radioA5" value="A"> 
+                <label for="radioA5">Singing, chirping, or making noises.</label>
+            </div>
+            <div class="quiz-option">
+                <input type="radio" name="q5" id="radioB5" value="B"> 
+                <label for="radioB5">Moving around or expressing myself physically.</label>
+            </div>
+            <div class="quiz-option">
+                <input type="radio" name="q5" id="radioC5" value="C"> 
+                <label for="radioC5">Keeping it simple, through gestures and body language.</label>
+            </div>
+            <div class="quiz-option">
+                <input type="radio" name="q5" id="radioD5" value="D"> 
+                <label for="radioD5">I don’t communicate much, but I’ll do so when necessary.</label>
+            </div>
+        </div>
+        
+        <div class="button-row">
+            <button data-prev="section5">Back</button>
+            <button data-next="section7" disabled>Next</button>
+        </div>
+    </section> 
+
+    <!-- Question 6 -->
+    <section class="center-screen quiz-section" id="section7">
+        <h1>Question 6</h1>
+        <p>What do you value most in a friend or companion?</p>
+        
+        <div class="quiz-options">
+            <div class="quiz-option">
+                <input type="radio" name="q6" id="radioA6" value="A"> 
+                <label for="radioA6">I want a companion who is loyal and protective.</label>
+            </div>
+            <div class="quiz-option">
+                <input type="radio" name="q6" id="radioB6" value="B"> 
+                <label for="radioB6">I want a companion who’s adventurous and curious like me.</label>
+            </div>
+            <div class="quiz-option">
+                <input type="radio" name="q6" id="radioC6" value="C"> 
+                <label for="radioC6">I like a quiet and peaceful companion who enjoys relaxing.</label>
+            </div>
+            <div class="quiz-option">
+                <input type="radio" name="q6" id="radioD6" value="D"> 
+                <label for="radioD6">I want a companion who’s friendly and enjoys group activities.</label>
+            </div>
+        </div>
+        
+        <div class="button-row">
+            <button data-prev="section6">Back</button>
+            <button data-next="section8" disabled>Next</button>
+        </div>
+    </section> 
+
+    <!-- Question 7 -->
+    <section class="center-screen quiz-section" id="section8">
+        <h1>Question 7</h1>
+        <p>What’s your preferred way of moving around?</p>
+        
+        <div class="quiz-options">
+            <div class="quiz-option">
+                <input type="radio" name="q7" id="radioA7" value="A"> 
+                <label for="radioA7">I like to zip around quickly, always on the go.</label>
+            </div>
+            <div class="quiz-option">
+                <input type="radio" name="q7" id="radioB7" value="B"> 
+                <label for="radioB7">I prefer to walk or trot at a steady pace.</label>
+            </div>
+            <div class="quiz-option">
+                <input type="radio" name="q7" id="radioC7" value="C"> 
+                <label for="radioC7">I move slowly and steadily, staying close to my home.</label>
+            </div>
+            <div class="quiz-option">
+                <input type="radio" name="q7" id="radioD7" value="D"> 
+                <label for="radioD7">I would like to fly or float through the air.</label>
+            </div>
+        </div>
+        
+        <div class="button-row">
+            <button data-prev="section7">Back</button>
+            <button data-next="section9" disabled>Next</button>
+        </div>
+    </section>
+
+    <!-- Question 8 -->
+    <section class="center-screen quiz-section" id="section9">
+        <h1>Question 8</h1>
+        <p>How do you feel about teamwork?</p>
+        
+        <div class="quiz-options">
+            <div class="quiz-option">
+                <input type="radio" name="q8" id="radioA8" value="A"> 
+                <label for="radioA8">I enjoy working with others, especially in large groups.</label>
+            </div>
+            <div class="quiz-option">
+                <input type="radio" name="q8" id="radioB8" value="B"> 
+                <label for="radioB8">I prefer to work in smaller groups or with close companions.</label>
+            </div>
+            <div class="quiz-option">
+                <input type="radio" name="q8" id="radioC8" value="C"> 
+                <label for="radioC8">I like being independent and doing things on my own.</label>
+            </div>
+            <div class="quiz-option">
+                <input type="radio" name="q8" id="radioD8" value="D"> 
+                <label for="radioD8">I like being part of a team that does things together.</label>
+            </div>
+        </div>
+        
+        <div class="button-row">
+            <button data-prev="section8">Back</button>
+            <button data-next="section10" disabled>Next</button>
+        </div>
+    </section>
+
+    <!-- Question 9 -->
+    <section class="center-screen quiz-section" id="section10">
+        <h1>Question 9</h1>
+        <p>How do you feel about living near water?</p>
+        
+        <div class="quiz-options">
+            <div class="quiz-option">
+                <input type="radio" name="q9" id="radioA9" value="A"> 
+                <label for="radioA9">I love water and prefer to live near it.</label>
+            </div>
+            <div class="quiz-option">
+                <input type="radio" name="q9" id="radioB9" value="B"> 
+                <label for="radioB9">I enjoy water, but I’m not obsessed with it.</label>
+            </div>
+            <div class="quiz-option">
+                <input type="radio" name="q9" id="radioC9" value="C"> 
+                <label for="radioC9">I like water but don’t need it to thrive.</label>
+            </div>
+            <div class="quiz-option">
+                <input type="radio" name="q9" id="radioD9" value="D"> 
+                <label for="radioD9">I’m okay with it, but it’s not essential.</label>
+            </div>
+        </div>
+        
+        <div class="button-row">
+            <button data-prev="section9">Back</button>
+            <button data-next="section11" disabled>Next</button>
+        </div>
+    </section>
+
+    <!-- Question 10 -->
+    <section class="center-screen quiz-section" id="section11">
+        <h1>Question 10</h1>
+        <p>What kind of weather do you prefer?</p>
+        
+        <div class="quiz-options">
+            <div class="quiz-option">
+                <input type="radio" name="q10" id="radioA10" value="A"> 
+                <label for="radioA10">Warm and sunny with occasional rain.</label>
+            </div>
+            <div class="quiz-option">
+                <input type="radio" name="q10" id="radioB10" value="B"> 
+                <label for="radioB10">Cold and snowy with some sunshine.</label>
+            </div>
+            <div class="quiz-option">
+                <input type="radio" name="q10" id="radioC10" value="C"> 
+                <label for="radioC10">Mild with gentle winds and pleasant rain.</label>
+            </div>
+            <div class="quiz-option">
+                <input type="radio" name="q10" id="radioD10" value="D"> 
+                <label for="radioD10">Hot and sunny with occasional storms.</label>
+            </div>
+        </div>
+        
+        <div class="button-row">
+            <button data-prev="section9">Back</button>
+            <button data-next="section12" disabled>Submit</button>
+        </div>
+    </section>
+
+    <!-- Result -->
+    <section class="center-screen quiz-section" id="section12">
+        <h1>Congratulations</h1>
+        <p></p>
+        <div class="result-wrapper"></div>
+        
+        <div class="button-row">
+            <button data-prev="section1" id="retry">Try Again?</button>
+        </div>
+    </section>
+
+    <!-- Programmer Details -->
+    <footer>
+        <p>Made by: Fiel Louis L. Omas-as</p> |
+        <a href="https://github.com/FielLouis" target="_blank">GitHub Profile</a> |
+        <a href="https://www.facebook.com/fiellouis.omasas" target="_blank">Facebook</a>
+    </footer>
+
+    <script type="text/javascript" src="js/transitions.js"></script>
+    <script type="text/javascript" src="js/scoring.js"></script>
+</body>
+</html>
