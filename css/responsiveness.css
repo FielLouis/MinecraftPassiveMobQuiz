@@ -1,0 +1,119 @@
+/* Media query for screen sizes 1200px or less */
+@media screen and (max-width: 1200px) {
+    
+    :root {
+        font-size: 40px;
+    }
+
+    section {
+        max-width: 1000px;
+    }
+
+    ul#navbar li {
+        width: 75px;
+    }
+}
+
+/* Media query for screen sizes 1000px or less */
+@media screen and (max-width: 1000px) {
+    
+    :root {
+        font-size: 36px;
+    }
+
+    section {
+        max-width: 700px;
+    }
+
+    ul#navbar li {
+        width: 60px;
+        gap: 10px;
+    }
+}
+
+/* Media query for screen sizes 792px or less */
+@media screen and (max-width: 792px) {
+    
+    :root {
+        font-size: 30px;
+    }
+
+    section {
+        max-width: 600px;
+    }
+
+    ul#navbar li {
+        width: 60px;
+        height: 15px;
+    }
+}
+
+/* Media query for screen sizes 600px or less */
+@media screen and (max-width: 600px) {
+    
+    :root {
+        font-size: 25px;
+    }
+
+    section {
+        max-width: 400px;
+    }
+
+    ul#navbar {
+        gap: 5px;
+    }
+
+    ul#navbar li {
+        width: 40px;
+        height: 12px;
+    }
+}
+
+/* Media query for screen sizes 420px or less */
+@media screen and (max-width: 420px) {
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+/* Media query for screen sizes 400px or less */
+@media screen and (max-width: 400px) {
+    
+    :root {
+        font-size: 20px;
+    }
+
+    section {
+        max-width: 400px;
+    }
+
+    ul#navbar {
+        gap: 5px;
+    }
+
+    ul#navbar li {
+        width: 30px;
+        height: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.80rem;
+    }
+
+    .quiz-options {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .quiz-option label {
+        font-size: 0.6rem;
+        max-width: 350px;
+    }
+}

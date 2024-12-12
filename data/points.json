@@ -1,0 +1,62 @@
+{
+    "q1": {
+        "A": ["TropicalFish", "Turtle", "Parrot"],
+        "B": ["SkeletonHorse", "SnowGolem", "Rabbit"],
+        "C": ["Ocelot", "Fox", "Cat"],
+        "D": ["Cow", "Sheep", "Mooshroom"]
+    },
+    "q2": {
+        "A": ["Parrot", "Bat", "Allay"],
+        "B": ["Horse", "Camel", "Donkey"],
+        "C": ["Salmon", "Axolotl", "Squid"],
+        "D": ["Villager", "Mooshroom", "Pig"]
+    },
+    "q3": {
+        "A": ["Rabbit", "Frog", "Pig"],
+        "B": ["Turtle", "Axolotl", "Cat"],
+        "C": ["Cow", "Sheep", "Villager"],
+        "D": ["Allay", "Parrot", "Ocelot"]
+    },
+    "q4": {
+        "A": ["Villager", "Parrot", "Mooshroom"],
+        "B": ["Donkey", "Fox", "Rabbit"],
+        "C": ["Cat", "Ocelot", "Axolotl"],
+        "D": ["Horse", "Mule", "Sheep"]
+    },
+    "q5": {
+        "A": ["Parrot", "Allay", "Bat"],
+        "B": ["Rabbit", "Frog", "Fox"],
+        "C": ["Cat", "Ocelot", "Villager"],
+        "D": ["Turtle", "Axolotl", "GlowSquid"]
+    },
+    "q6": {
+        "A": ["Horse", "Mule", "SkeletonHorse"],
+        "B": ["Parrot", "Allay", "Ocelot"],
+        "C": ["Turtle", "Axolotl", "Mooshroom"],
+        "D": ["Villager", "Cow", "Sheep"]
+    },
+    "q7": {
+        "A": ["Rabbit", "Frog", "Pig"],
+        "B": ["Horse", "Camel", "Donkey"],
+        "C": ["Turtle", "GlowSquid", "Axolotl"],
+        "D": ["Parrot", "Bat", "Allay"]
+    },
+    "q8": {
+        "A": ["Villager", "Mooshroom", "Cow"],
+        "B": ["Rabbit", "Fox", "Ocelot"],
+        "C": ["Cat", "Axolotl", "Turtle"],
+        "D": ["Parrot", "Horse", "Sheep"]
+    },
+    "q9": {
+        "A": ["Axolotl", "Salmon", "Squid"],
+        "B": ["Horse", "Pig", "Mooshroom"],
+        "C": ["Villager", "Camel", "Fox"],
+        "D": ["Rabbit", "Frog", "Turtle"]
+    },
+    "q10": {
+        "A": ["Parrot", "Pig", "TropicalFish"],
+        "B": ["SnowGolem", "SkeletonHorse", "Rabbit"],
+        "C": ["Turtle", "Axolotl", "Mooshroom"],
+        "D": ["Camel", "Strider", "Villager"]
+    }
+}
