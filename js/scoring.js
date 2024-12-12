@@ -105,6 +105,27 @@ function calculateResult() {
     imageWrapper.appendChild(img); // Add the image to the wrapper
 }
 
+// Reset the scores to zero when retrying
+function resetScores() {
+    for (let mob in scores) {
+        scores[mob] = 0;  // Reset each mob's score to 0
+    }
+    console.log('Scores have been reset:', scores);
+}
+
+// Add event listener to reset the quiz
+document.getElementById('retry').addEventListener('click', () => {
+    // Reset the scores object to initial values
+    resetScores();
+
+    // Reset any result display
+    const resultSection = document.getElementById('section12');
+    resultSection.querySelector('p').innerHTML = '';
+    resultSection.querySelector('.result-wrapper').innerHTML = '';
+
+    console.log('Quiz reset');
+});
+
 // Add event listener to the "Submit" button
 document.querySelector('button[data-next="section12"]').addEventListener('click', calculateResult);
 
